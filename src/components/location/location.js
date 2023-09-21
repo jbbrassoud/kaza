@@ -1,41 +1,26 @@
-import '../locations/locations.css'
+import './location.css'
 
 import { Link } from 'react-router-dom'
 import loc from '../../datas/logements.json'
 console.log(loc);
 
-function Locations() {
- 
-/*     title.forEach((e) => {
-        console.log(e.cover);
-        return(
-            <div className="logement">
-                <Link to = "#">
-                <span>{e.title}</span>
-                <img src={e.cover} alt="loc1"></img>
-                </Link>
-            </div>
-        ) 
-    }) */
-    //<Link to = "/$title.id">
-    return(
-        <section className='locations'>
-            {loc.map((e)=> (
-            <div className="logement">
-            <Link to = "#">
+function Location(props) {
+    const e = props.e
+
+    return( 
+        <div className="logement">
+            <Link to = {"/location/"+e.id}>
             <span>{e.title}</span>
             <img src={e.cover} alt="loc1"></img>
             </Link>
         </div>
-            ))}
-        </section>
     )
     
 
 
 }
 
-export default Locations;
+export default Location;
 
 /*return <section className="locations">
 <div className="location">

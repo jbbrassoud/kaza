@@ -13,11 +13,12 @@ import Home from './components/app/app'
  
 ReactDOM.render(
     <React.StrictMode>
-        <Header />
+
         <Router>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/location" element={<Logement />} />
+                <Route path="/location/:id" element={<Logement />} />
                 <Route path="/a-propos" element={<Apropos/>}/>
                 <Route path="*" element={<Notfound/>}/>
             </Routes>
