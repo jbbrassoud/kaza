@@ -1,0 +1,46 @@
+.locations {
+  margin-top: 50px;
+  display: flex;
+  max-width: 1440px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background: #F6F6F6;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.logement {
+  display: block;
+  position: relative;
+  height: 340px;
+  width: 29%;
+  margin: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  background-blend-mode: darken;
+}
+.logement img {
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  filter: brightness(80%);
+}
+.logement span {
+  position: absolute;
+  margin-right: 20px;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 1rem;
+  height: 55px;
+  width: 95%;
+  text-wrap: wrap;
+  bottom: 0px;
+  z-index: 3;
+  text-shadow: -1px 0px 4px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}

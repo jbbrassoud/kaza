@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 0;
+  max-width: 1440px;
+  height: 68px;
+}
+header img {
+  height: 68px;
+}
+header nav {
+  font-family: "Montserrat";
+}
+header nav a {
+  text-decoration: none;
+  color: #FF6060;
+  padding-left: 57px;
+  font-size: 24px;
+}

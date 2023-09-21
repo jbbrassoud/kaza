@@ -1,0 +1,14 @@
+body {
+
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1440px;
+  padding: 0 100px;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+}
+
