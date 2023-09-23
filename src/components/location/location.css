@@ -1,6 +1,16 @@
+.locations {
+  margin-top: 50px;
+  display: flex;
+  max-width: 1440px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background: #F6F6F6;
+  padding: 20px;
+  justify-content: space-between;
+}
 
-
-.logement {
+.card {
   display: block;
   position: relative;
   height: 340px;
@@ -11,7 +21,7 @@
   z-index: 2;
   background-blend-mode: darken;
 }
-.logement img {
+.card img {
   height: 100%;
   -o-object-position: center;
      object-position: center;
@@ -20,7 +30,7 @@
   z-index: 0;
   filter: brightness(80%);
 }
-.logement span {
+.card span {
   position: absolute;
   margin-right: 20px;
   padding: 15px 20px;
