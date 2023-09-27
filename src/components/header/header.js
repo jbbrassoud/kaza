@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './header.css';
 import { NavLink} from 'react-router-dom';
 
+//récupération et soulignement du lien avec la classe "active"
+
+
 
 function Header() {
     return (<header>
@@ -14,18 +17,13 @@ function Header() {
             </header>
     )
 } 
-
-
-
-/*function Header() {
-    return <header>
-                    <img src={logo} className="App-logo" alt="logo"></img>
-                    <nav>
-                        <a href='index.html'>Accueil</a>
-                        <a href='index.html'>A propos</a>
-                    </nav>
-            </header>
-}*/
-
+var currentPageURL = window.location.href;
+var navLinks = document.querySelectorAll('nav NavLink');
+console.log(navLinks);
+navLinks.forEach(function(link) {
+  if (link.href === currentPageURL) {
+    link.classList.add('active');
+  }
+});
 
 export default Header

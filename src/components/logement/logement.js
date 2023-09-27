@@ -1,6 +1,9 @@
 import './logement.css'
 import title from '../../datas/logements.json'
 import { useParams } from 'react-router-dom'
+import Carousel from '../carrousel/carousel'
+
+
 
 function Logement() {
 
@@ -9,9 +12,12 @@ function Logement() {
     console.log(id);
     let idSrc = title.filter((e) => e.id === id)
     const loc = idSrc[0]
+    console.log(loc.pictures[0]);
 
     return <section className="logement">
+        <Carousel imgSrc={loc.pictures[0]}/>
         <div className='gallery'>
+
             <img src={loc.cover} alt='Cover'></img>
         </div>
         <div className="location">

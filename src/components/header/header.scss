@@ -12,12 +12,15 @@ header{
     }
     nav{
         font-family: 'Montserrat';
-        a{
+        Link{
             text-decoration: none;
             color:#FF6060;
             padding-left:57px;
             font-size: 24px;
         }
+        .active{
+            text-decoration: underline 1px red;
+        }
     }
 }
-    
+
