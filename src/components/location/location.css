@@ -6,16 +6,17 @@
   flex-wrap: wrap;
   border-radius: 25px;
   background: #F6F6F6;
-  padding: 20px;
-  justify-content: space-between;
+  padding: 1vw;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .card {
   display: block;
   position: relative;
-  height: 340px;
-  width: 29%;
-  margin: 25px;
+  height: 24vw;
+  width: 24vw;
+  margin: 1vw;
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;

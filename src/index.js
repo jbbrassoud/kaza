@@ -5,6 +5,7 @@ import './styles/index.css';
 import Logement from './components/logement/logement';
 import Apropos from './components/apropos/apropos';
 import Notfound from './components/notfound/notfound';
+import Footer from './components/footer/footer';
 
 
 import Header from './components/header/header'
@@ -22,7 +23,7 @@ ReactDOM.render(
                 <Route path="/a-propos" element={<Apropos/>}/>
                 <Route path="*" element={<Notfound/>}/>
             </Routes>
-            
+            <Footer />
         </Router>
     </React.StrictMode>,
 document.getElementById('root')

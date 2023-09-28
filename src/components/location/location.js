@@ -1,8 +1,8 @@
 import './location.css'
 
 import { Link } from 'react-router-dom'
-import loc from '../../datas/logements.json'
-console.log(loc);
+//import loc from '../../datas/logements.json'
+
 
 function Location(props) {
     const e = props.e
