@@ -6,11 +6,10 @@
     flex-wrap: wrap;
     border-radius: 25px;
     background: #F6F6F6;
-    padding: 1vw;
+    padding: 2vw;
     justify-content: space-around;
-    align-content: center;
 
-    
+
 }
 
 .card{
@@ -18,12 +17,12 @@
     position: relative;
     height: 24vw;
     width: 24vw;
-    margin: 1vw;
+    margin: 1.5vw;
     border-radius: 10px;
     overflow: hidden;
     z-index: 2;
     background-blend-mode: darken;
-
+    
     
 
     img{

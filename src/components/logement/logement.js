@@ -13,17 +13,24 @@ function Logement() {
     const imgSrc = loc.pictures
     const images = imgSrc;
 
-    return <section className="logement">
+    return <content>
         
         <div className='gallery'>
             <Carousel images={images}/>
         </div>
-        <div className="location">
-            <h1>{loc.title}</h1>
-            <p>{loc.location}</p>
+        <div className='loc-head'>
+            <div className="title">
+                <h1>{loc.title}</h1>
+                <p>{loc.location}</p>
+            </div>
+            <div className="loc-host">
+                <span>{loc.host.name}</span>
+                <img src={loc.host.picture} alt={"photo de"+loc.host.picture}/>
+            </div>
         </div>
+
         
-    </section>
+    </content>
 }
 
 export default Logement;

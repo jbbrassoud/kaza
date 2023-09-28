@@ -1,3 +1,5 @@
+//app = home, à corriger lorsque tout fonctionnera bien
+
 import './app.css'
 import Location from '../location/location'
 import Banner from '../banner/Banner'
