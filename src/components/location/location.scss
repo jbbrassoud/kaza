@@ -1,15 +1,17 @@
 .locations{
-    margin-top: 50px;
-    display: flex;
-    max-width: 1440px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
+    grid-column-gap: 10px;
+    grid-row-gap: 70px;
+    background-color: #f6f6f6;
     border-radius: 25px;
-    background: #F6F6F6;
-    padding: 2vw;
-    justify-content: space-around;
-
-
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin: 43px auto;
+    padding: 50px;
+    row-gap: 25px;
+    width: 93%;
 }
 
 .card{
@@ -17,7 +19,9 @@
     position: relative;
     height: 24vw;
     width: 24vw;
-    margin: 1.5vw;
+    max-height: 4000px;
+    max-width: 400px;
+    margin: auto;
     border-radius: 10px;
     overflow: hidden;
     z-index: 2;
@@ -47,5 +51,35 @@
         text-shadow: -1px 0px 4px rgba(0,0,0,0.9);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
 
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+    .locations{
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        overflow: hidden;
+        padding: 1vw;
+    }
+    .card{
+        width: 100%;
+    }
+    img{
+        height: unset;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 900px) {
+    .locations{
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+    }
+    .card{
+        width: 100%;
+    }
+    img{
+        height: unset;
+        width: 100%;
     }
 }

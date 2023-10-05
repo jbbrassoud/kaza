@@ -6,7 +6,6 @@ import Logement from './components/logement/logement';
 import Apropos from './components/apropos/apropos';
 import Notfound from './components/notfound/notfound';
 import Footer from './components/footer/footer';
-import App from './components/app/app';
 import Header from './components/header/header'
 
 import Home from './components/app/app'

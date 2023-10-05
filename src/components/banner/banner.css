@@ -5,6 +5,7 @@
   height: 223px;
   border-radius: 25px;
   overflow: hidden;
+  width: 100%;
 }
 .banner h1 {
   position: absolute;
@@ -22,6 +23,7 @@
   z-index: 2;
 }
 .banner img {
+  height: 100%;
   width: 100%;
   -o-object-position: center;
      object-position: center;
@@ -30,4 +32,10 @@
   z-index: 0;
   box-shadow: 0px -66px 77px 61px rgba(0, 0, 0, 0.9) inset;
   filter: brightness(70%);
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+  .banner h1 {
+    font-size: 3.9vw;
+  }
 }

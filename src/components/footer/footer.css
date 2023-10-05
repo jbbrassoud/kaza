@@ -6,15 +6,17 @@ footer {
   bottom: 0;
   width: 100vw;
   margin: 0;
+  padding: 0;
   background-color: black;
-  padding: 30px;
 }
 footer img {
-  height: 40px;
-  margin: 30px;
+  height: 4vw;
+  margin: 2vw;
   filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(200%) contrast(100%);
 }
 footer span {
-  font-size: 24px;
+  text-align: center;
+  width: 20vw;
+  font-size: 2vw;
   color: white;
 }

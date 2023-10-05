@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react';
+import arrow from './prev.svg'
+
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,9 +16,9 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      <button onClick={goToPrevSlide}>&#9664;</button>
+      <button id='prevslide' onClick={goToPrevSlide}><img src={arrow} alt="précédent"/></button>
       <img src={images[currentIndex]} alt={"Image du carrousel"+[currentIndex]} />
-      <button onClick={goToNextSlide}>&#9654;</button>
+      <button id='nextslide' onClick={goToNextSlide}><img src={arrow} alt="suivant"/></button>
     </div>
   );
 };

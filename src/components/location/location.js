@@ -11,7 +11,7 @@ function Location(props) {
         <div className="card">
             <Link to = {"/location/"+e.id}>
             <span>{e.title}</span>
-            <img src={e.cover} alt="loc1"></img>
+            <img src={e.cover} alt={e.title}></img>
             </Link>
         </div>
     )

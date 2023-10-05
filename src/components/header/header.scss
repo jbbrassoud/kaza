@@ -16,11 +16,50 @@ header{
             text-decoration: none;
             color:#FF6060;
             padding-left:57px;
-            font-size: 24px;
+            font-size: 3vw;
         }
         a.active{
             text-decoration: underline;
         }
     }
 }
-    
+@media (min-width: 900px) and (max-width: 1400px) {
+    header{
+        max-width: 80vw;
+        height: 57px;
+        margin: 0 10vw;
+    }
+    img{
+        height: 57px;
+
+    }
+    nav{
+        font-family: 'Montserrat';
+        a{
+            text-decoration: none;
+            color:#FF6060;
+            padding-left:1vw;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 899px) {
+    header{
+        height: 48px;
+        margin: 0 5vw;
+    }
+    img{
+        height: 48px;
+
+    }
+    nav{
+        font-family: 'Montserrat';
+        .nav-link{
+            text-decoration: none;
+            color:#FF6060;
+            padding-left:1vw;
+            font-size: 12px;
+        }
+    }
+}

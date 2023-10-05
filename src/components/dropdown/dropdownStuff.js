@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 
 
-function Dropdown({title, description, stuff}) {
+function DropdownStuff({title, stuffList}) {
 
 
   const [isOpen, setIsOpen] = useState(false);
@@ -31,16 +31,16 @@ function Dropdown({title, description, stuff}) {
         
     </button>
         {isOpen && (
-          <div className='dropdown-menu'>
-            <p>{description}</p>
+                      <ul className="dropdown-menu">
 
-          </div>
-
+                      {stuffList.map((tag, index) => 
+                      <li key={index}>{tag}</li>)}
+                  </ul>
         )}
     </div>
   );
 }
 
 
-export default Dropdown;
+export default DropdownStuff;
 
