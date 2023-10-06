@@ -1,7 +1,6 @@
 div {
   display: flex;
   flex-direction: row;
-  justify-content: left;
   color: #FF6060;
 }
 
@@ -43,10 +42,20 @@ div {
   transform: rotate(180deg);
 }
 
+.loc-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+  align-items: center;
+  width: 100%;
+}
+
 .title {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  flex: 200%;
+  width: 100%;
 }
 .title h1 {
   font-size: 36px;
@@ -57,36 +66,21 @@ div {
   font-size: 18px;
   margin-block: 0;
 }
-
-.loc-top {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0 10px 0;
-  align-items: center;
-  width: 100%;
-}
-.loc-top .loc-host {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.loc-top .loc-host span {
-  font-size: 18px;
-  margin-right: 20px;
-}
-.loc-top .loc-host img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+.title ul {
+  margin: 10px 0;
 }
 
 .loc-mid {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: right;
   justify-content: space-between;
   width: 100%;
-  margin: 10px 0 20px 0;
+}
+.loc-mid .starsBar {
+  display: flex;
+  justify-content: end;
+  margin: 15px 0 0 0;
 }
 
 .loc-bot {
@@ -97,6 +91,21 @@ div {
   width: 49%;
 }
 
+.loc-host {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.loc-host span {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.loc-host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
 .dropdown {
   width: 40%;
   margin-bottom: 30px;
@@ -105,4 +114,52 @@ div {
 ul {
   list-style-type: none;
   padding-left: 20px;
+}
+
+@media (max-width: 899px) {
+  .carousel {
+    height: 255px;
+  }
+  .carousel button {
+    top: 100px;
+  }
+  .carousel button img {
+    height: 70px !important;
+  }
+  .carousel #nextslide {
+    top: 85px !important;
+  }
+  .loc-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .loc-top .title h1 {
+    font-size: 5vw;
+  }
+  .loc-top .title p {
+    font-size: 4vw;
+    margin-block: 0;
+  }
+  .loc-top .title .tag-list li {
+    font-size: 2.5vw !important;
+  }
+  .loc-mid {
+    margin: 20px 0;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .loc-mid .loc-host img {
+    height: 8vw;
+    width: 8vw;
+  }
+  .loc-mid .starsBar {
+    margin: 0;
+  }
+  .loc-bot {
+    flex-direction: column;
+  }
+  .loc-bot .dropdown {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }

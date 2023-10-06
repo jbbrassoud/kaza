@@ -7,3 +7,12 @@ content{
 .banner{
     margin-bottom: 30px;
 }
+
+@media (min-width: 1px) and (max-width: 900px) {
+    #a-propos{
+        .banner{
+            margin-bottom: 30px !important;
+        }
+        .dropdown{width: 100%;}
+        }
+    }

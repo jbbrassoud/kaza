@@ -1,7 +1,6 @@
 div{
     display: flex;
     flex-direction: row;
-    justify-content: left;
     color: #FF6060;
 }
 
@@ -43,11 +42,20 @@ div{
     }
 }
 
+.loc-top{
+    display:flex ;
+    flex-direction: row;
+    justify-content : space-between;
+    margin: 20px 0 10px 0;
+    align-items: center;
+    width: 100%;
+}
+
 .title{
     display: flex;
     flex-direction: column;
-    
-    width:80%;
+    flex: 200%;
+    width:100%;
     h1{
         font-size: 36px;
         font-weight: 500;
@@ -57,35 +65,24 @@ div{
         font-size: 18px;
         margin-block: 0;
     }
-}
-
-.loc-top{
-    display:flex ;
-    justify-content : space-between;
-    margin: 30px 0 10px 0;
-    align-items: center;
-    width: 100%;
-    .loc-host{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        span{
-            font-size: 18px;
-            margin-right: 20px;
-        }
-        img{
-            width:64px;height:64px;
-            border-radius: 50%;
-        }
+    ul{
+        margin: 10px 0;
     }
 }
+
+
 .loc-mid{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: right;
     justify-content: space-between;
     width: 100%;
-    margin: 10px 0 20px 0;
+
+    .starsBar{
+        display: flex;
+        justify-content: end;
+        margin: 15px 0 0 0;
+    }
 }
 
 .loc-bot{
@@ -97,6 +94,20 @@ div{
     
 }
 
+.loc-host{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    span{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    img{
+        width:64px;height:64px;
+        border-radius: 50%;
+    }
+}
+
 .dropdown{
     width: 40%;
     margin-bottom: 30px;
@@ -105,4 +116,57 @@ div{
 ul{
     list-style-type: none;
     padding-left: 20px;
+}
+
+@media (max-width:899px) {
+    .carousel{
+        height: 255px;
+        button{
+            top: 100px;
+            img{
+                height: 70px !important;
+            }
+
+        }
+        #nextslide{
+            top: 85px !important;
+        }
+    }
+    .loc-top{
+        flex-direction: column;
+        align-items: flex-start;
+        .title{
+            h1{
+                font-size: 5vw;
+            }
+            p{
+                font-size: 4vw;
+                margin-block: 0;
+            }
+            .tag-list li{
+                font-size: 2.5vw !important;
+            }
+        }
+    }
+    .loc-mid{
+        margin: 20px 0;
+        flex-direction: row-reverse;
+        align-items: center;
+        .loc-host{
+            img{
+                height: 8vw;
+                width: 8vw;
+            }
+        }
+        .starsBar{
+            margin: 0;
+        }
+    }
+    .loc-bot{
+        flex-direction: column;
+        .dropdown{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
 }

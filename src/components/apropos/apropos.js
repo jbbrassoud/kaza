@@ -5,8 +5,8 @@ import banner from './banner.png'
 
 function Apropos() {
 
-    return <content>
-            <Banner h1="" img={banner}/>
+    return <content id="a-propos">
+            <Banner id="banner-apropos" h1="" img={banner}/>
             <Dropdown title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
             <Dropdown title="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
             <Dropdown title="Service" description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."/>

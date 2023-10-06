@@ -1,5 +1,8 @@
 .banner{
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     color:white;
     height: 223px;
@@ -8,12 +11,11 @@
     width: 100%;
     
     h1{
-      
+
       position: absolute;
       width: 808px;
       margin-left: auto;
       margin-right: auto;
-      top:50px;
       left: 0;
       right: 0;
       text-align: center;
@@ -39,5 +41,22 @@
     h1{
       font-size: 3.9vw;
     }
+  }
+}
+
+@media (min-width: 1px) and (max-width: 899px) {
+  .banner{
+    height: 111px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    align-items: left !important;
+
+    h1{
+      text-align: left;
+      width: 55vw;
+      font-size: 22px;
+      margin-left: 20px;
+    }
+
   }
 }

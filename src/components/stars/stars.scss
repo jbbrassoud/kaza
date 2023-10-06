@@ -1,9 +1,20 @@
 .stars-list{
+
     img{
         height: 24px;
         margin:5px;
     }
     
+}
+
+@media (min-width: 1px) and (max-width: 900px) {
+  
+.stars-list{
+    img{
+        height: 4vw;
+        margin: 1vw;
+    }
+}
 }
 
 

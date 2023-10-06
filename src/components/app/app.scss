@@ -1,12 +1,13 @@
 content{
-  max-width: 1440px;
-  padding: 0 10vw;
-  
+  width: auto;
+  padding: 0 10%;
+  overflow: clip;
+  min-height:70vh;
 }
 
-@media (min-width: 1px) and (max-width: 1400px) {
+@media (min-width: 1px) and (max-width: 900px) {
+  
 content{
-  max-width: 80vw;
-  overflow: hidden;
+  padding: 0 5%;
 }
 }

@@ -1,10 +1,10 @@
 header{
     display: flex;
-    margin: 0 100px;
+    margin: 0 10%;
     align-items: center;
     justify-content: space-between;
     padding: 45px 0;
-    max-width: 1440px;
+
     height: 68px;
     img{
         height: 68px;
@@ -16,7 +16,7 @@ header{
             text-decoration: none;
             color:#FF6060;
             padding-left:57px;
-            font-size: 3vw;
+            font-size: 24px;
         }
         a.active{
             text-decoration: underline;
@@ -36,8 +36,7 @@ header{
     nav{
         font-family: 'Montserrat';
         a{
-            text-decoration: none;
-            color:#FF6060;
+
             padding-left:1vw;
             font-size: 18px;
         }
@@ -46,20 +45,19 @@ header{
 
 @media (min-width: 1px) and (max-width: 899px) {
     header{
+        padding: 10px 0;
         height: 48px;
         margin: 0 5vw;
     }
-    img{
-        height: 48px;
+    .App-logo{
+        height: 35px !important;
 
     }
     nav{
         font-family: 'Montserrat';
-        .nav-link{
-            text-decoration: none;
-            color:#FF6060;
-            padding-left:1vw;
-            font-size: 12px;
+        a{
+            font-size: 12px !important;
+            padding-left: 3vw !important;
         }
     }
 }

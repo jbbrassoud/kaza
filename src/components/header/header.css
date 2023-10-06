@@ -1,10 +1,9 @@
 header {
   display: flex;
-  margin: 0 100px;
+  margin: 0 10%;
   align-items: center;
   justify-content: space-between;
   padding: 45px 0;
-  max-width: 1440px;
   height: 68px;
 }
 header img {
@@ -17,7 +16,7 @@ header nav a {
   text-decoration: none;
   color: #FF6060;
   padding-left: 57px;
-  font-size: 3vw;
+  font-size: 24px;
 }
 header nav a.active {
   text-decoration: underline;
@@ -36,27 +35,24 @@ header nav a.active {
     font-family: "Montserrat";
   }
   nav a {
-    text-decoration: none;
-    color: #FF6060;
     padding-left: 1vw;
     font-size: 18px;
   }
 }
 @media (min-width: 1px) and (max-width: 899px) {
   header {
+    padding: 10px 0;
     height: 48px;
     margin: 0 5vw;
   }
-  img {
-    height: 48px;
+  .App-logo {
+    height: 35px !important;
   }
   nav {
     font-family: "Montserrat";
   }
-  nav .nav-link {
-    text-decoration: none;
-    color: #FF6060;
-    padding-left: 1vw;
-    font-size: 12px;
+  nav a {
+    font-size: 12px !important;
+    padding-left: 3vw !important;
   }
 }

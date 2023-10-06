@@ -14,4 +14,14 @@
 .notfound p {
   font-size: 36px;
   font-weight: 500;
+  text-align: center;
+}
+
+@media (min-width: 1px) and (max-width: 900px) {
+  .notfound h1 {
+    font-size: 30vw;
+  }
+  .notfound p {
+    font-size: 5vw;
+  }
 }

@@ -8,6 +8,7 @@ footer {
   margin: 0;
   padding: 0;
   background-color: black;
+  height: auto;
 }
 footer img {
   height: 4vw;
@@ -19,4 +20,16 @@ footer span {
   width: 20vw;
   font-size: 2vw;
   color: white;
+}
+
+@media (max-width: 899px) {
+  footer {
+    height: 30vw !important;
+    justify-content: center;
+    padding: 5vw 0;
+  }
+  footer img {
+    height: 8vw;
+    margin: 2vw;
+  }
 }

@@ -27,24 +27,24 @@ function Logement() {
 
             <Carousel images={images}/>
 
-        <div className='loc-top'>
+        <section className='loc-top'>
             <div className="title">
                 <h1>{loc.title}</h1>
                 <p>{loc.location}</p>
-            </div>
-            <div className="loc-host">
-                <span>{loc.host.name}</span>
-                <img src={loc.host.picture} alt={"photo de"+loc.host.picture}/>
-            </div>
-        </div>
-        <div className='loc-mid'>
-            <div className='tagsBar'>
+
                 <Tags tags={tagsList}/>
             </div>
-            <div className="starsBar">
-                <Stars scaleValue={loc.rating}/>
+        
+            <div className='loc-mid'>
+                <div className="loc-host">
+                    <span>{loc.host.name}</span>
+                    <img src={loc.host.picture} alt={"photo de"+loc.host.picture}/>
+                </div>
+                <div className="starsBar">
+                    <Stars scaleValue={loc.rating}/>
+                </div>
             </div>
-        </div>
+        </section>
         <div className='loc-bot'>
 
             <Dropdown title="Description" description={loc.description}/>
