@@ -14,12 +14,19 @@ const Carousel = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
+  const shouldShowArrows = images.length > 1;
+
   return (
     <div className="carousel">
+      {shouldShowArrows && (
+        <>
       <button id='prevslide' onClick={goToPrevSlide}><img src={arrow} alt="précédent"/></button>
-      <img src={images[currentIndex]} alt={"Image du carrousel"+[currentIndex]} />
+      
       <button id='nextslide' onClick={goToNextSlide}><img src={arrow} alt="suivant"/></button>
-    </div>
+      </>
+      )}
+      <img src={images[currentIndex]} alt={"Image du carrousel"+[currentIndex]} />
+      </div>
   );
 };
 
